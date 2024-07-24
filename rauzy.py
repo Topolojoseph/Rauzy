@@ -7,7 +7,7 @@ def contfrac(l):
     for a in rl:
         r=1/(a+r)
     return r
-#Remark: l here is a list of numbers; rl here means that it reads backward; and -i is the n-i+1.
+#Remark: l here is a list of numbers; rl here means that it reads backward; and -i is the n-i+1, e.g., -1 is the last.
 
 lst=[i*i for i in range(1, 51)]
 
@@ -27,6 +27,7 @@ print(float(alpha), float(gamma))
 #Remark: lst[:2*i+1] is just lst[1:2*i+1]
 
 y=(6, [2, 3, 1, 5, 0, 4], [gamma, 1-alpha-gamma, alpha, gamma, 1-alpha-gamma, alpha])
+#Remark: y[0] is the 6, y[1] is [2, 3, 1, 5, 0, 4].
 
 #Rauzy induction
 def induction(ifs):
